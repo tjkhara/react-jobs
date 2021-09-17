@@ -4,19 +4,11 @@ import { FaAngleDoubleRight } from 'react-icons/fa'
 // I SWITCHED TO PERMANENT DOMAIN
 const url = 'https://course-api.com/react-tabs-project'
 function App() {
-  const [jobs, setJobs] = useState([])
-
-  const getJobs = async () => {
-    const response = await fetch(url)
-    const receivedJobs = await response.json()
-    setJobs(receivedJobs)
-  }
-
   useEffect(() => {
-    getJobs()
-  }, [])
+    console.log('useEffect')
+  })
 
-  console.log(jobs)
+  console.log('react component')
 
   return <section className='section'></section>
 }
