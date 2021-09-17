@@ -6,7 +6,7 @@ const url = 'https://course-api.com/react-tabs-project'
 function App() {
   useEffect(() => {
     console.log('useEffect')
-  })
+  }, [])
 
   console.log('react component')
 
